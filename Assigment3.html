@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 3 Nuraini</title>
+    <link rel="icon" href="image/hacktiv8.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container my-4">
+      <div class="card bg-light border-0 shadow">
+        <div class="card-body">
+          <h3 class="text-center fw-bold mb-3">COVID-19 TRACKER</h3>
+          <form id="searchForm" class="mb-3">
+            <div class="row g-3 d-flex justify-content-center">
+              <div class="col-auto">
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="negara" id="negara" aria-describedby="helpId" placeholder="Search country ..." />
+                </div>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-success rounded" type="submit">Get Data</button>
+              </div>
+            </div>
+          </form>
+          <div class="row g-3">
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-warning-subtle p-4">
+                <img src="image/active.png" style="height: 100px; object-fit: contain" alt="active" />
+                <h4 class="fw-bold text-center" id="Active Case">Active Case</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-success-subtle p-4">
+                <img src="image/newcases.png" style="height: 100px; object-fit: contain" alt="newcase" />
+                <h4 class="fw-bold text-center" id="New Case">New Case</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-primary-subtle p-4">
+                <img src="image/recovered.png" style="height: 100px; object-fit: contain" alt="recovered" />
+                <h4 class="fw-bold text-center" id="Case Recovered">Case Recovered</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-danger-subtle p-4">
+                <img src="image/totalcase.png" style="height: 100px; object-fit: contain" alt="totalcase" />
+                <h4 class="fw-bold text-center" id="Case Total">Total Case</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-dark-subtle p-4">
+                <img src="image/totaldeath.png" style="height: 100px; object-fit: contain" alt="totaldeath" />
+                <h4 class="fw-bold text-center" id="Death Total">Total Death</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card border-0 shadow bg-info-subtle p-4">
+                <img src="image/totaltest.png" style="height: 100px; object-fit: contain" alt="totaltest" />
+                <h4 class="fw-bold text-center" id="Test Total">Total test</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
